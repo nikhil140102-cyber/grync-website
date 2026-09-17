@@ -6,7 +6,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import emailjs from "@emailjs/browser";
 import { CheckCircle2, AlertCircle } from "lucide-react";
-import styles from "./CtaForm.module.css";
+import styles from "./Ctaform.module.css";
 
 if (typeof window !== "undefined") {
 	gsap.registerPlugin(ScrollTrigger);

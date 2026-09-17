@@ -75,7 +75,10 @@
 	.section {
 		padding: 60px 0;
 	}
+	.eyebrow {
+		font-size: 9px;
+	}
 	.paragraph {
-		font-size: 14px !important;
+		font-size: 12px !important;
 	}
 }

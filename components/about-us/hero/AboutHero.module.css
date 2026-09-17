@@ -126,12 +126,15 @@
 
 @media (max-width: 680px) {
 	.hero {
-		padding: 70px 0 60px;
+		padding: 110px 0 60px;
+	}
+	.eyebrow {
+	font-size: 9px;
 	}
 	.heading {
 		font-size: 26px !important;
 	}
 	.description {
-		font-size: 14px !important;
+		font-size: 12px !important;
 	}
 }

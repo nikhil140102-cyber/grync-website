@@ -9,6 +9,10 @@ import Logo from "@/public/images/logo/Grync_Logo_Color 1.png";
 
 const navItems = [
 	{
+		label: "Home",
+		href: "/",
+	},
+	{
 		label: "Platform",
 		href: "/productBrief",
 	},
@@ -16,17 +20,15 @@ const navItems = [
 		label: "Solution",
 		href: "/solution",
 	},
+	
+	{
+		label: "Insights",
+		href: "/insights",
+	},
+	
 	{
 		label: "About us",
 		href: "/aboutus",
-	},
-	{
-		label: "Integrations",
-		href: "/productBrief",
-	},
-	{
-		label: "Resources",
-		href: "/blog-page",
 	},
 	{
 		label: "Contact us",

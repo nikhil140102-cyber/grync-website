@@ -8,7 +8,7 @@
 		#0e0a17 65%,
 		#0a0712 100%
 	);
-	padding: 110px 0 90px;
+	padding: 70px 0 70px;
 }
 
 .container {
@@ -24,6 +24,7 @@
 
 .left {
 	max-width: 560px;
+	margin-top:-122px;
 }
 
 .eyebrow {
@@ -130,6 +131,9 @@
 @media (max-width: 680px) {
 	.hero {
 		padding: 110px 0 60px;
+	}
+	.left {
+		margin-top: 0px;
 	}
 	.eyebrow {
 	

@@ -71,8 +71,7 @@ const SiteFooter = () => {
 							className={styles.logo}
 						/>
 						<p className={styles.tagline}>
-							The Intelligence Layer that bridges the gap between
-							fragmented SaaS platforms.
+							From signal to action, the business signal execution layer on top of everything you run.
 						</p>
 					</div>
 

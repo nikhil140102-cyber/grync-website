@@ -6,7 +6,7 @@
 
 .navBar {
 	display: flex;
-	flex-wrap: wrap;
+	/* flex-wrap: wrap; */
 	align-items: center;
 	gap: 4px;
 	width: min(1350px, calc(100% - 80px));
@@ -14,6 +14,7 @@
 	background: #f4f5f7;
 	border-radius: 999px;
 	padding: 10px;
+	justify-content: space-between;
 }
 
 .navItem {
@@ -90,7 +91,7 @@
 }
 
 .navLabel span {
-	font-size: 13px;
+	font-size: 15px;
 	font-weight: 600;
 	color: #4a4f5c;
 }

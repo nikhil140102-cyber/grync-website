@@ -24,6 +24,7 @@
 
 .left {
 	max-width: 560px;
+	margin-top: -122px;
 }
 
 .eyebrow {
@@ -128,6 +129,9 @@
 	.hero {
 		padding: 110px 0 60px;
 	}
+	.left {
+	margin-top: 0;
+}
 	.eyebrow {
 	font-size: 9px;
 	}

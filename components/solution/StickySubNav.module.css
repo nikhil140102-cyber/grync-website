@@ -149,8 +149,8 @@
 	}
 	.iconStack,
 	.navIcon {
-		width: 18px;
-		height: 18px;
+		width: 24px;
+		/* height: 18px; */
 	}
 	.navItem {
 		gap: 8px;

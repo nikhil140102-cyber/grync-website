@@ -145,4 +145,10 @@
 	.description {
 		font-size: 12px !important;
 	}
+	.container {
+	width: calc(100% - 24px);   /* was 40px margin each side (calc(100% - 80px)) — now 12px each side */
+}
+.right {
+	margin-top: 30px;   /* tightened from 50px, since there's less width to spare */
+}
 }

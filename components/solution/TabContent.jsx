@@ -266,7 +266,7 @@ const TabContent = ({ activeId }) => {
 
 			<div className={styles.tableCard}>
 				<div className={styles.tableHeaderRow}>
-					<span>The moment</span>
+					<span className="tablehead1">The moment</span>
 					<span>What grync.io does</span>
 				</div>
 				{data.tableRows.map((row, i) => (

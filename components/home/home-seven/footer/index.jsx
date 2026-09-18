@@ -36,24 +36,24 @@ const socialLinks = [
 		href: "https://www.linkedin.com/company/grync-io/",
 		icon: "/images/newhome/linkedin.png",
 	},
-	{
-		id: "instagram",
-		label: "Instagram",
-		href: "#",
-		icon: "/images/newhome/instagram.png",
-	},
-	{
-		id: "facebook",
-		label: "Facebook",
-		href: "#",
-		icon: "/images/newhome/facebook.png",
-	},
-	{
-		id: "twitter",
-		label: "Twitter",
-		href: "#",
-		icon: "/images/newhome/twitter.png",
-	},
+	// {
+	// 	id: "instagram",
+	// 	label: "Instagram",
+	// 	href: "#",
+	// 	icon: "/images/newhome/instagram.png",
+	// },
+	// {
+	// 	id: "facebook",
+	// 	label: "Facebook",
+	// 	href: "#",
+	// 	icon: "/images/newhome/facebook.png",
+	// },
+	// {
+	// 	id: "twitter",
+	// 	label: "Twitter",
+	// 	href: "#",
+	// 	icon: "/images/newhome/twitter.png",
+	// },
 ];
 
 const SiteFooter = () => {

@@ -1,0 +1,185 @@
+.section {
+	background: linear-gradient(180deg, #fdf1e8 0%, #fdece0 100%);
+	padding: 90px 0;
+}
+
+.container {
+	width: min(1350px, calc(100% - 80px));
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 60px;
+	align-items: center;
+}
+
+/* ============ LEFT ============ */
+
+.left {
+	max-width: 480px;
+}
+
+.eyebrow {
+	display: inline-block;
+	background: #fbdce8;
+	color: #c2255c;
+	font-size: 12px;
+	font-weight: 700;
+	letter-spacing: 0.06em !important;
+	word-spacing: normal !important;
+	padding: 8px 16px;
+	border-radius: 6px;
+	margin-bottom: 20px;
+}
+
+.heading {
+	font-size: 38px !important;
+	line-height: 1.2 !important;
+	font-weight: 800;
+	color: #14161a;
+	margin: 0 0 16px;
+	letter-spacing: -0.5px !important;
+	word-spacing: normal !important;
+}
+
+.description {
+	font-size: 16px !important;
+	line-height: 1.7;
+	color: #565f70;
+	margin: 0;
+	letter-spacing: normal !important;
+	word-spacing: normal !important;
+}
+
+/* ============ CARD ============ */
+
+.card {
+	background: #fff;
+	border-radius: 16px;
+	padding: 30px 32px;
+	box-shadow: 0 30px 60px rgba(20, 22, 26, 0.1);
+}
+
+.form {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.form label {
+	font-size: 13px;
+	font-weight: 700;
+	color: #14161a;
+}
+
+.form input {
+	font-family: inherit;
+	font-size: 14px;
+	color: #14161a;
+	background: #fff;
+	border: 1px solid #e2e5eb;
+	border-radius: 8px;
+	padding: 12px 14px;
+	outline: none;
+	transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.form input::placeholder {
+	color: #a5a9b3;
+}
+
+.form input:focus {
+	border-color: #d6266f;
+	box-shadow: 0 0 0 3px rgba(214, 38, 111, 0.12);
+}
+
+.form input:disabled {
+	background: #f7f8fa;
+	color: #9a9fac;
+	cursor: not-allowed;
+}
+
+.inputError {
+	border-color: #e8392a !important;
+}
+
+.errorText {
+	display: flex;
+	align-items: center;
+	gap: 5px;
+	font-size: 12px;
+	color: #e8392a;
+}
+
+.submitButton {
+	margin-top: 10px;
+	font-family: inherit;
+	font-size: 15px;
+	font-weight: 700;
+	color: #fff;
+	background: #14161a;
+	border: none;
+	border-radius: 10px;
+	padding: 15px 20px;
+	cursor: pointer;
+	transition: background 0.2s ease, opacity 0.2s ease;
+}
+
+.submitButton:hover:not(:disabled) {
+	background: #24262c;
+}
+
+.submitButton:disabled {
+	opacity: 0.6;
+	cursor: not-allowed;
+}
+
+/* ============ SUCCESS STATE ============ */
+
+.successState {
+	padding: 6px 0;
+}
+
+.successState h3 {
+	font-size: 18px;
+	font-weight: 800;
+	color: #14161a;
+	margin: 0 0 6px;
+}
+
+.successState p {
+	font-size: 14px;
+	line-height: 1.6;
+	color: #565f70;
+	margin: 0;
+}
+
+/* ============ RESPONSIVE ============ */
+
+@media (max-width: 991px) {
+	.container {
+		grid-template-columns: 1fr;
+		gap: 36px;
+	}
+	.left {
+		max-width: 100%;
+		text-align: center;
+	}
+}
+
+@media (max-width: 560px) {
+	.section {
+		padding: 60px 0;
+	}
+	.container {
+		width: calc(100% - 24px);
+	}
+	.heading {
+		font-size: 26px !important;
+	}
+	.description {
+		font-size: 14px !important;
+	}
+	.card {
+		padding: 24px 22px;
+	}
+}

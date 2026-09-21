@@ -76,7 +76,7 @@ const AboutHero = () => {
 				<div className={styles.right}>
 					<img
 						ref={imageRef}
-						src="/images/about/s1.png"
+						src="/images/about/s11.png"
 						alt="grync.io turns scattered signals into one decisive action"
 						className={styles.heroImage}
 					/>

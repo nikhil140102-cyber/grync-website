@@ -1,34 +1,60 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import styles from "./PostTemplate.module.css";
 
 const PostTemplate = ({ post, prevPost, nextPost }) => {
 	const rootRef = useRef(null);
 	const hasSections = Array.isArray(post.sections) && post.sections.length > 0;
+	const [activeSectionId, setActiveSectionId] = useState(
+		hasSections ? post.sections[0].id : null
+	);
+
+	/* real scroll-spy — tracks which section is actually in view and
+	   highlights that TOC entry, instead of always highlighting the
+	   first item regardless of scroll position */
+	useEffect(() => {
+		if (!hasSections) return;
+
+		const sectionEls = post.sections
+			.map((s) => document.getElementById(s.id))
+			.filter(Boolean);
+
+		if (sectionEls.length === 0) return;
+
+		const observer = new IntersectionObserver(
+			(entries) => {
+				entries.forEach((entry) => {
+					if (entry.isIntersecting) {
+						setActiveSectionId(entry.target.id);
+					}
+				});
+			},
+			{
+				// a section counts as "current" once it crosses just
+				// below the sticky header, and stops counting once it's
+				// past the upper ~70% of the viewport
+				rootMargin: "-110px 0px -70% 0px",
+				threshold: 0,
+			}
+		);
+
+		sectionEls.forEach((el) => observer.observe(el));
+		return () => observer.disconnect();
+		// eslint-disable-next-line react-hooks/exhaustive-deps
+	}, [hasSections]);
 
 	useEffect(() => {
 		const ctx = gsap.context(() => {
-			const tl = gsap.timeline({ defaults: { ease: "power3.out" } });
-
-			tl.from(`.${styles.headerMeta}`, { y: 14, opacity: 0, duration: 0.5 })
-				.from(
-					`.${styles.title}`,
-					{ y: 24, opacity: 0, duration: 0.6 },
-					"-=0.25"
-				)
-				.from(
-					`.${styles.excerpt}`,
-					{ y: 14, opacity: 0, duration: 0.5 },
-					"-=0.3"
-				)
-				.from(
-					`.${styles.authorRow}`,
-					{ opacity: 0, duration: 0.4 },
-					"-=0.2"
-				);
+			gsap.from(`.${styles.featureImage}`, {
+				y: 20,
+				opacity: 0,
+				scale: 0.98,
+				duration: 0.7,
+				ease: "power3.out",
+			});
 		}, rootRef);
 
 		return () => ctx.revert();
@@ -74,6 +100,30 @@ const PostTemplate = ({ post, prevPost, nextPost }) => {
 					</ul>
 				);
 
+			case "table":
+				return (
+					<div key={i} className={styles.tableWrap}>
+						<table className={styles.contentTable}>
+							<thead>
+								<tr>
+									{block.headers.map((h, j) => (
+										<th key={j}>{h}</th>
+									))}
+								</tr>
+							</thead>
+							<tbody>
+								{block.rows.map((row, r) => (
+									<tr key={r}>
+										{row.map((cell, c) => (
+											<td key={c}>{cell}</td>
+										))}
+									</tr>
+								))}
+							</tbody>
+						</table>
+					</div>
+				);
+
 			case "callouts":
 				return (
 					<div key={i} className={styles.calloutGrid}>
@@ -105,30 +155,13 @@ const PostTemplate = ({ post, prevPost, nextPost }) => {
 
 	return (
 		<article ref={rootRef} className={styles.article}>
-			{/* ================= HEADER ================= */}
+			{/* ================= HEADER: feature image only ================= */}
 			<header className={styles.header}>
-				<div className={styles.headerMeta}>
-					<span className={styles.categoryTag}>{post.category}</span>
-					<span className={styles.metaSep}>&middot; {post.readTime}</span>
-				</div>
-
-				<h1 className={styles.title}>{post.title}</h1>
-
-				<p className={styles.excerpt}>{post.excerpt}</p>
-
-				{post.author && (
-					<div className={styles.authorRow}>
-						<img
-							src={post.author.avatar}
-							alt={post.author.name}
-							className={styles.authorAvatar}
-						/>
-						<strong>{post.author.name}</strong>
-						<span className={styles.metaSep}>
-							&middot; {post.author.publishedDate}
-						</span>
-					</div>
-				)}
+				<img
+					src={post.image}
+					alt={post.title}
+					className={styles.featureImage}
+				/>
 			</header>
 
 			<div className={styles.headerDivider} />
@@ -144,7 +177,14 @@ const PostTemplate = ({ post, prevPost, nextPost }) => {
 								<ol className={styles.tocList}>
 									{post.sections.map((s, i) => (
 										<li key={s.id}>
-											<a href={`#${s.id}`} className={styles.tocLink}>
+											<a
+												href={`#${s.id}`}
+												className={`${styles.tocLink} ${
+													s.id === activeSectionId
+														? styles.tocLinkActive
+														: ""
+												}`}
+											>
 												{i + 1}. {s.heading}
 											</a>
 										</li>

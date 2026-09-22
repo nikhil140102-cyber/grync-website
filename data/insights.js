@@ -95,8 +95,8 @@ export const posts = [
 					{
 						type: "list",
 						items: [
-							"Notification Agent ensures teams never miss a key event, from new user signups to churn warnings.",
-							"Insight Agent lets teams ask questions and get instant answers about user behavior and growth trends.",
+							"• Notification Agent ensures teams never miss a key event, from new user signups to churn warnings.",
+							"• Insight Agent lets teams ask questions and get instant answers about user behavior and growth trends.",
 						],
 					},
 					{
@@ -414,11 +414,11 @@ sections: [
 			{
 				type: "list",
 				items: [
-					"Higher customer lifetime value",
-					"Improved Net Revenue Retention",
-					"Lower cost of replacement acquisition",
-					"More retention without extra headcount",
-					"Better conversion from risk prevention to revenue growth",
+					"• Higher customer lifetime value",
+					"• Improved Net Revenue Retention",
+					"• Lower cost of replacement acquisition",
+					"• More retention without extra headcount",
+					"• Better conversion from risk prevention to revenue growth",
 				],
 			},
 		],
@@ -578,9 +578,9 @@ sections: [
 			{
 				type: "list",
 				items: [
-					"Reduce churn before it happens.",
-					"Predict revenue risk in real time.",
-					"Automate retention at scale.",
+					"• Reduce churn before it happens.",
+					"• Predict revenue risk in real time.",
+					"• Automate retention at scale.",
 				],
 			},
 		],
@@ -647,9 +647,9 @@ sections: [
 			{
 				type: "list",
 				items: [
-					"They measure churn with one tool",
-					"They track user behavior with another tool",
-					"They take action through a third tool manually, after a delay",
+					"• They measure churn with one tool",
+					"• They track user behavior with another tool",
+					"• They take action through a third tool manually, after a delay",
 				],
 			},
 			{
@@ -695,9 +695,9 @@ sections: [
 			{
 				type: "list",
 				items: [
-					"Customer Churn Rate \u2013 Percentage of customers lost",
-					"Revenue Churn \u2013 Loss in recurring revenue",
-					"Monthly Churn Rate \u2013 Monthly customer loss",
+					"• Customer Churn Rate \u2013 Percentage of customers lost",
+					"• Revenue Churn \u2013 Loss in recurring revenue",
+					"• Monthly Churn Rate \u2013 Monthly customer loss",
 				],
 			},
 			{ type: "subheading", text: "Churn Rate Formula" },
@@ -722,8 +722,8 @@ sections: [
 			{
 				type: "list",
 				items: [
-					"Early-stage SaaS companies often have higher churn rates",
-					"Mature SaaS companies typically maintain lower churn rates",
+					"• Early-stage SaaS companies often have higher churn rates",
+					"• Mature SaaS companies typically maintain lower churn rates",
 				],
 			},
 			{
@@ -732,7 +732,7 @@ sections: [
 			},
 			{
 				type: "list",
-				items: ["Poor onboarding", "Weak product experience", "Lack of customer engagement"],
+				items: ["• Poor onboarding", "• Weak product experience", "• Lack of customer engagement"],
 			},
 			{
 				type: "paragraph",
@@ -752,10 +752,10 @@ sections: [
 			{
 				type: "list",
 				items: [
-					"Lower customer acquisition cost",
-					"Higher lifetime value (LTV)",
-					"More predictable revenue",
-					"Increased expansion opportunities",
+					"• Lower customer acquisition cost",
+					"• Higher lifetime value (LTV)",
+					"• More predictable revenue",
+					"• Increased expansion opportunities",
 				],
 			},
 			{
@@ -776,10 +776,10 @@ sections: [
 			{
 				type: "list",
 				items: [
-					"Drop in product usage",
-					"Decrease in login frequency",
-					"Low engagement levels",
-					"Increased support complaints",
+					"• Drop in product usage",
+					"• Decrease in login frequency",
+					"• Low engagement levels",
+					"• Increased support complaints",
 				],
 			},
 			{
@@ -793,7 +793,7 @@ sections: [
 			},
 			{
 				type: "list",
-				items: ["Incomplete onboarding", "Low feature adoption", "Inactive users"],
+				items: ["• Incomplete onboarding", "• Low feature adoption", "• Inactive users"],
 			},
 			{
 				type: "paragraph",
@@ -806,7 +806,7 @@ sections: [
 			},
 			{
 				type: "list",
-				items: ["Usage activity", "Feature adoption", "Engagement level"],
+				items: ["• Usage activity", "• Feature adoption", "• Engagement level"],
 			},
 			{
 				type: "paragraph",
@@ -896,16 +896,16 @@ sections: [
 			{
 				type: "list",
 				items: [
-					"Collect product usage data",
-					"Track churn signals",
-					"Analyze behavioral patterns",
-					"Predict churn risk",
+					"• Collect product usage data",
+					"• Track churn signals",
+					"• Analyze behavioral patterns",
+					"• Predict churn risk",
 				],
 			},
 			{ type: "paragraph", text: "Key benefits:" },
 			{
 				type: "list",
-				items: ["Early churn alerts", "Better retention strategies", "Improved customer experience"],
+				items: ["• Early churn alerts", "• Better retention strategies", "• Improved customer experience"],
 			},
 			{
 				type: "paragraph",
@@ -954,9 +954,9 @@ sections: [
 			{
 				type: "list",
 				items: [
-					"Customer success teams reach out to at-risk users",
-					"Product teams improve features",
-					"Marketing teams run targeted campaigns",
+					"• Customer success teams reach out to at-risk users",
+					"• Product teams improve features",
+					"• Marketing teams run targeted campaigns",
 				],
 			},
 			{
@@ -977,19 +977,19 @@ sections: [
 			{
 				type: "list",
 				items: [
-					"Product analytics",
-					"Behavioral signals",
-					"Predictive insights",
-					"Growth automation",
+					"• Product analytics",
+					"• Behavioral signals",
+					"• Predictive insights",
+					"• Growth automation",
 				],
 			},
 			{ type: "paragraph", text: "With grync.io, teams can:" },
 			{
 				type: "list",
 				items: [
-					"Identify churn signals early",
-					"Predict customer churn accurately",
-					"Take proactive actions to retain users",
+					"• Identify churn signals early",
+					"• Predict customer churn accurately",
+					"• Take proactive actions to retain users",
 				],
 			},
 			{
@@ -1114,10 +1114,10 @@ sections: [
 			{
 				type: "list",
 				items: [
-					"Product analytics \u2013 analyzing user data to understand interactions with a product, helping businesses enhance their offerings based on user insights",
-					"User behavior tracking \u2013 monitoring user actions to uncover preferences and trends, tailoring strategies for improved experiences",
-					"Growth automation \u2013 streamlining growth processes so businesses can automate tasks and focus on strategic scaling",
-					"Lifecycle engagement \u2013 engaging customers throughout their journey, fostering loyalty and increasing lifetime value",
+					"• Product analytics \u2013 analyzing user data to understand interactions with a product, helping businesses enhance their offerings based on user insights",
+					"• User behavior tracking \u2013 monitoring user actions to uncover preferences and trends, tailoring strategies for improved experiences",
+					"• Growth automation \u2013 streamlining growth processes so businesses can automate tasks and focus on strategic scaling",
+					"• Lifecycle engagement \u2013 engaging customers throughout their journey, fostering loyalty and increasing lifetime value",
 				],
 			},
 			{
@@ -1202,10 +1202,10 @@ sections: [
 			{
 				type: "list",
 				items: [
-					"Low product adoption",
-					"Poor onboarding experience",
-					"High churn rates",
-					"Limited user insights",
+					"• Low product adoption",
+					"• Poor onboarding experience",
+					"• High churn rates",
+					"• Limited user insights",
 				],
 			},
 			{
@@ -1252,9 +1252,9 @@ sections: [
 			{
 				type: "list",
 				items: [
-					"Faster user onboarding \u2014 streamlined processes help users get started quickly, reducing frustration and confusion",
-					"Better engagement \u2014 enhanced interaction features keep users invested, fostering deeper connections",
-					"Lower acquisition costs \u2014 efficient targeting and referral-driven organic growth reduce acquisition expense",
+					"• Faster user onboarding \u2014 streamlined processes help users get started quickly, reducing frustration and confusion",
+					"• Better engagement \u2014 enhanced interaction features keep users invested, fostering deeper connections",
+					"• Lower acquisition costs \u2014 efficient targeting and referral-driven organic growth reduce acquisition expense",
 				],
 			},
 			{
@@ -1275,9 +1275,9 @@ sections: [
 			{
 				type: "list",
 				items: [
-					"Predict user behavior",
-					"Identify churn risks",
-					"Recommend actions automatically",
+					"• Predict user behavior",
+					"• Identify churn risks",
+					"• Recommend actions automatically",
 				],
 			},
 			{
@@ -1294,9 +1294,9 @@ sections: [
 			{
 				type: "list",
 				items: [
-					"Product Teams \u2192 Improve user experience",
-					"Marketing Teams \u2192 Run targeted campaigns",
-					"Customer Success Teams \u2192 Increase retention",
+					"• Product Teams \u2192 Improve user experience",
+					"• Marketing Teams \u2192 Run targeted campaigns",
+					"• Customer Success Teams \u2192 Increase retention",
 				],
 			},
 			{
@@ -1317,20 +1317,20 @@ sections: [
 			{
 				type: "list",
 				items: [
-					"Advanced product analytics",
-					"User behavior tracking",
-					"Predictive insights",
-					"Growth automation",
+					"• Advanced product analytics",
+					"• User behavior tracking",
+					"• Predictive insights",
+					"• Growth automation",
 				],
 			},
 			{ type: "paragraph", text: "With grync.io, teams can:" },
 			{
 				type: "list",
 				items: [
-					"Understand user journeys",
-					"Identify growth opportunities",
-					"Automate engagement",
-					"Drive revenue growth",
+					"• Understand user journeys",
+					"• Identify growth opportunities",
+					"• Automate engagement",
+					"• Drive revenue growth",
 				],
 			},
 			{
@@ -1351,10 +1351,10 @@ sections: [
 			{
 				type: "list",
 				items: [
-					"Unified growth platform",
-					"Real-time user insights",
-					"AI-powered recommendations",
-					"Automated growth workflows",
+					"• Unified growth platform",
+					"• Real-time user insights",
+					"• AI-powered recommendations",
+					"• Automated growth workflows",
 				],
 			},
 		],
@@ -1442,13 +1442,13 @@ sections: [
 			{
 				type: "list",
 				items: [
-					"Data without action: traditional platforms generate reports but lack automation layers to execute growth initiatives",
-					"No AI-driven insights: without AI customer behaviour analytics, teams rely on manual interpretation, slow and error-prone",
-					"No predictive modelling: reactive systems cannot forecast churn or expansion opportunities",
-					"Disconnected from revenue: insights rarely tie directly to ARR, MRR, or expansion metrics",
-					"Multiple tools required: teams juggle a customer engagement platform, digital adoption platform, retention software, and analytics dashboards separately",
-					"Manual analysis slows growth: time spent exporting and interpreting data equals missed revenue opportunities",
-					"No automation layer: growth actions must be executed manually, introducing delays that cost accounts",
+					"• Data without action: traditional platforms generate reports but lack automation layers to execute growth initiatives",
+					"• No AI-driven insights: without AI customer behaviour analytics, teams rely on manual interpretation, slow and error-prone",
+					"• No predictive modelling: reactive systems cannot forecast churn or expansion opportunities",
+					"• Disconnected from revenue: insights rarely tie directly to ARR, MRR, or expansion metrics",
+					"• Multiple tools required: teams juggle a customer engagement platform, digital adoption platform, retention software, and analytics dashboards separately",
+					"• Manual analysis slows growth: time spent exporting and interpreting data equals missed revenue opportunities",
+					"• No automation layer: growth actions must be executed manually, introducing delays that cost accounts",
 				],
 			},
 			{
@@ -1469,11 +1469,11 @@ sections: [
 			{
 				type: "list",
 				items: [
-					"Day 1: Behavioral data is collected and stored",
-					"Day 3: A weekly report is generated and shared",
-					"Day 5: A team member reviews it and flags an at-risk account",
-					"Day 7: A manual outreach email is drafted and sent",
-					"Day 8: The customer has already submitted a cancellation request",
+					"• Day 1: Behavioral data is collected and stored",
+					"• Day 3: A weekly report is generated and shared",
+					"• Day 5: A team member reviews it and flags an at-risk account",
+					"• Day 7: A manual outreach email is drafted and sent",
+					"• Day 8: The customer has already submitted a cancellation request",
 				],
 			},
 			{
@@ -1532,11 +1532,11 @@ sections: [
 			{
 				type: "list",
 				items: [
-					"Real-time product analytics platform capabilities \u2014 immediate insights into user interactions and product performance",
-					"Predictive analytics for SaaS \u2014 forecasting trends and user behaviors",
-					"Behavioral analytics \u2014 analyzing user behavior patterns to inform product decisions",
-					"Product analytics for retention \u2014 understanding retention metrics to reduce churn",
-					"A full product-led growth platform layer \u2014 integrating product management to drive growth",
+					"• Real-time product analytics platform capabilities \u2014 immediate insights into user interactions and product performance",
+					"• Predictive analytics for SaaS \u2014 forecasting trends and user behaviors",
+					"• Behavioral analytics \u2014 analyzing user behavior patterns to inform product decisions",
+					"• Product analytics for retention \u2014 understanding retention metrics to reduce churn",
+					"• A full product-led growth platform layer \u2014 integrating product management to drive growth",
 				],
 			},
 			{
@@ -1584,9 +1584,9 @@ sections: [
 			{
 				type: "list",
 				items: [
-					"Observe: continuous, real-time monitoring of behavioral signals across users and accounts",
-					"Decide: AI models evaluate risk, opportunity, and intent, assigning dynamic scores and determining the next best action",
-					"Act: workflows automatically initiate the right intervention, whether it's a retention outreach, upsell prompt, onboarding nudge, or a team alert",
+					"• Observe: continuous, real-time monitoring of behavioral signals across users and accounts",
+					"• Decide: AI models evaluate risk, opportunity, and intent, assigning dynamic scores and determining the next best action",
+					"• Act: workflows automatically initiate the right intervention, whether it's a retention outreach, upsell prompt, onboarding nudge, or a team alert",
 				],
 			},
 			{
@@ -1617,9 +1617,9 @@ sections: [
 			{
 				type: "list",
 				items: [
-					"Which users are likely to convert?",
-					"Which accounts show expansion potential?",
-					"What usage signals indicate churn risk?",
+					"• Which users are likely to convert?",
+					"• Which accounts show expansion potential?",
+					"• What usage signals indicate churn risk?",
 				],
 			},
 			{ type: "subheading", text: "AI-Powered Churn Prediction" },
@@ -1655,36 +1655,36 @@ sections: [
 			{
 				type: "list",
 				items: [
-					"Improve feature adoption software performance",
-					"Measure onboarding effectiveness",
-					"Drive product usage analytics insights",
+					"• Improve feature adoption software performance",
+					"• Measure onboarding effectiveness",
+					"• Drive product usage analytics insights",
 				],
 			},
 			{ type: "subheading", text: "Growth Teams" },
 			{
 				type: "list",
 				items: [
-					"Increase user activation platform conversions",
-					"Automate experimentation",
-					"Optimize expansion revenue",
+					"• Increase user activation platform conversions",
+					"• Automate experimentation",
+					"• Optimize expansion revenue",
 				],
 			},
 			{ type: "subheading", text: "Customer Success" },
 			{
 				type: "list",
 				items: [
-					"Use customer success platform intelligence",
-					"Reduce churn with predictive alerts",
-					"Improve retention metrics",
+					"• Use customer success platform intelligence",
+					"• Reduce churn with predictive alerts",
+					"• Improve retention metrics",
 				],
 			},
 			{ type: "subheading", text: "RevOps" },
 			{
 				type: "list",
 				items: [
-					"Connect behavioural signals to revenue",
-					"Drive SaaS onboarding automation",
-					"Enable revenue optimization",
+					"• Connect behavioural signals to revenue",
+					"• Drive SaaS onboarding automation",
+					"• Enable revenue optimization",
 				],
 			},
 		],
@@ -1723,11 +1723,11 @@ sections: [
 			{
 				type: "list",
 				items: [
-					"Product analytics for SaaS startups: rapid iteration and activation tracking",
-					"Product analytics for fintech: compliance-aware engagement modelling",
-					"Product analytics for edtech: learning behaviour analytics and retention",
-					"B2B SaaS analytics platform: account-based growth intelligence",
-					"Enterprise product analytics software: scalable infrastructure with advanced AI",
+					"• Product analytics for SaaS startups: rapid iteration and activation tracking",
+					"• Product analytics for fintech: compliance-aware engagement modelling",
+					"• Product analytics for edtech: learning behaviour analytics and retention",
+					"• B2B SaaS analytics platform: account-based growth intelligence",
+					"• Enterprise product analytics software: scalable infrastructure with advanced AI",
 				],
 			},
 			{
@@ -1748,10 +1748,10 @@ sections: [
 			{
 				type: "list",
 				items: [
-					"API-based analytics platform integration",
-					"Cloud product analytics software deployment",
-					"Scalable SaaS analytics platform infrastructure",
-					"CRM, CDP, and marketing automation integrations",
+					"• API-based analytics platform integration",
+					"• Cloud product analytics software deployment",
+					"• Scalable SaaS analytics platform infrastructure",
+					"• CRM, CDP, and marketing automation integrations",
 				],
 			},
 			{
@@ -1841,9 +1841,9 @@ sections: [
 			{
 				type: "list",
 				items: [
-					"Deliver hyper-personalized experiences",
-					"Automate engagement across lifecycle stages",
-					"Increase conversions without increasing team size",
+					"• Deliver hyper-personalized experiences",
+					"• Automate engagement across lifecycle stages",
+					"• Increase conversions without increasing team size",
 				],
 			},
 			{
@@ -1890,19 +1890,19 @@ sections: [
 			{
 				type: "list",
 				items: [
-					"Learn from user behavior in real time",
-					"Predict next best actions",
-					"Trigger dynamic campaigns automatically",
+					"• Learn from user behavior in real time",
+					"• Predict next best actions",
+					"• Trigger dynamic campaigns automatically",
 				],
 			},
 			{ type: "subheading", text: "Key Capabilities" },
 			{
 				type: "list",
 				items: [
-					"Automated campaigns (email, in-app, push notifications)",
-					"Customer journey automation across onboarding, activation, and retention",
-					"AI-driven marketing workflows that adapt to user behavior",
-					"Real-time segmentation and targeting",
+					"• Automated campaigns (email, in-app, push notifications)",
+					"• Customer journey automation across onboarding, activation, and retention",
+					"• AI-driven marketing workflows that adapt to user behavior",
+					"• Real-time segmentation and targeting",
 				],
 			},
 			{
@@ -1928,19 +1928,19 @@ sections: [
 			{
 				type: "list",
 				items: [
-					"Manual campaign execution",
-					"Generic messaging",
-					"Delayed response to user behavior",
-					"Low conversion and retention rates",
+					"• Manual campaign execution",
+					"• Generic messaging",
+					"• Delayed response to user behavior",
+					"• Low conversion and retention rates",
 				],
 			},
 			{ type: "paragraph", text: "With an AI marketing automation SaaS platform, you can:" },
 			{
 				type: "list",
 				items: [
-					"Respond to user actions instantly",
-					"Personalize communication at scale",
-					"Optimize every stage of the funnel",
+					"• Respond to user actions instantly",
+					"• Personalize communication at scale",
+					"• Optimize every stage of the funnel",
 				],
 			},
 			{ type: "paragraph", text: "AI ensures no opportunity is missed." },
@@ -2024,11 +2024,11 @@ sections: [
 			{
 				type: "list",
 				items: [
-					"Faster user activation: guides users to key actions quickly",
-					"Higher conversion rates: personalized campaigns increase signups to paid conversions",
-					"Improved retention: engagement-driven workflows reduce churn",
-					"Increased revenue: upsell and cross-sell opportunities are automated",
-					"Scalable growth: enables growth without expanding your marketing team",
+					"• Faster user activation: guides users to key actions quickly",
+					"• Higher conversion rates: personalized campaigns increase signups to paid conversions",
+					"• Improved retention: engagement-driven workflows reduce churn",
+					"• Increased revenue: upsell and cross-sell opportunities are automated",
+					"• Scalable growth: enables growth without expanding your marketing team",
 				],
 			},
 		],
@@ -2092,20 +2092,20 @@ sections: [
 			{
 				type: "list",
 				items: [
-					"End-to-end customer journey automation",
-					"Fully automated, behavior-based campaigns",
-					"Real-time user segmentation",
-					"Predictive insights for smarter decisions",
+					"• End-to-end customer journey automation",
+					"• Fully automated, behavior-based campaigns",
+					"• Real-time user segmentation",
+					"• Predictive insights for smarter decisions",
 				],
 			},
 			{ type: "subheading", text: "Key Capabilities" },
 			{
 				type: "list",
 				items: [
-					"AI-driven campaign orchestration",
-					"Personalized engagement at scale",
-					"Revenue-focused marketing workflows",
-					"Continuous optimization",
+					"• AI-driven campaign orchestration",
+					"• Personalized engagement at scale",
+					"• Revenue-focused marketing workflows",
+					"• Continuous optimization",
 				],
 			},
 			{
@@ -2121,11 +2121,11 @@ sections: [
 			{
 				type: "list",
 				items: [
-					"Built specifically for SaaS growth",
-					"AI-first approach (not rule-based)",
-					"Real-time automation and insights",
-					"Easy integration with your stack",
-					"Scalable for startups to enterprises",
+					"• Built specifically for SaaS growth",
+					"• AI-first approach (not rule-based)",
+					"• Real-time automation and insights",
+					"• Easy integration with your stack",
+					"• Scalable for startups to enterprises",
 				],
 			},
 			{
@@ -2142,12 +2142,12 @@ sections: [
 			{
 				type: "list",
 				items: [
-					"Customer Acquisition Cost (CAC)",
-					"Conversion Rate",
-					"Activation Rate",
-					"Retention Rate",
-					"Customer Lifetime Value (LTV)",
-					"Monthly Recurring Revenue (MRR)",
+					"• Customer Acquisition Cost (CAC)",
+					"• Conversion Rate",
+					"• Activation Rate",
+					"• Retention Rate",
+					"• Customer Lifetime Value (LTV)",
+					"• Monthly Recurring Revenue (MRR)",
 				],
 			},
 			{ type: "paragraph", text: "With AI, every metric becomes optimized." },
@@ -2199,9 +2199,9 @@ sections: [
 			{
 				type: "list",
 				items: [
-					"Automate your growth engine.",
-					"Engage users intelligently.",
-					"Scale without limits.",
+					"• Automate your growth engine.",
+					"• Engage users intelligently.",
+					"• Scale without limits.",
 				],
 			},
 		],
@@ -2243,7 +2243,7 @@ sections: [
 			{ type: "paragraph", text: "If you've ever struggled with:" },
 			{
 				type: "list",
-				items: ["Low user engagement", "Drop-offs in onboarding", "Poor conversion rates"],
+				items: ["• Low user engagement", "• Drop-offs in onboarding", "• Poor conversion rates"],
 			},
 			{
 				type: "paragraph",
@@ -2278,10 +2278,10 @@ sections: [
 			{
 				type: "list",
 				items: [
-					"Consistent communication",
-					"Personalized user experience",
-					"Higher engagement and retention",
-					"Scalable marketing efforts",
+					"• Consistent communication",
+					"• Personalized user experience",
+					"• Higher engagement and retention",
+					"• Scalable marketing efforts",
 				],
 			},
 			{ type: "paragraph", text: "Automation ensures no user is ignored." },
@@ -2298,7 +2298,7 @@ sections: [
 			{ type: "paragraph", text: "Key stages include:" },
 			{
 				type: "list",
-				items: ["Awareness", "Consideration", "Activation", "Engagement", "Retention", "Conversion"],
+				items: ["• Awareness", "• Consideration", "• Activation", "• Engagement", "• Retention", "• Conversion"],
 			},
 			{
 				type: "paragraph",
@@ -2403,12 +2403,12 @@ sections: [
 			{
 				type: "list",
 				items: [
-					"Workflow builder",
-					"Event tracking",
-					"User segmentation",
-					"Multi-channel support",
-					"Real-time analytics",
-					"AI-driven insights",
+					"• Workflow builder",
+					"• Event tracking",
+					"• User segmentation",
+					"• Multi-channel support",
+					"• Real-time analytics",
+					"• AI-driven insights",
 				],
 			},
 			{
@@ -2425,10 +2425,10 @@ sections: [
 			{
 				type: "list",
 				items: [
-					"Manual workload",
-					"Missed engagement opportunities",
-					"Inconsistent communication",
-					"Low retention rates",
+					"• Manual workload",
+					"• Missed engagement opportunities",
+					"• Inconsistent communication",
+					"• Low retention rates",
 				],
 			},
 			{ type: "paragraph", text: "Automation solves these issues at scale." },
@@ -2442,10 +2442,10 @@ sections: [
 			{
 				type: "list",
 				items: [
-					"AI-driven personalization",
-					"Predictive user behavior",
-					"Automated decision-making",
-					"Real-time engagement",
+					"• AI-driven personalization",
+					"• Predictive user behavior",
+					"• Automated decision-making",
+					"• Real-time engagement",
 				],
 			},
 			{
@@ -2547,10 +2547,10 @@ sections: [
 			{
 				type: "list",
 				items: [
-					"Shows users step-by-step what to do",
-					"Makes it easy to move around the software",
-					"Clears confusion by giving tips and instructions",
-					"Helps users work faster and better",
+					"• Shows users step-by-step what to do",
+					"• Makes it easy to move around the software",
+					"• Clears confusion by giving tips and instructions",
+					"• Helps users work faster and better",
 				],
 			},
 			{
@@ -2567,20 +2567,20 @@ sections: [
 			{
 				type: "list",
 				items: [
-					"Users drop off after signing up",
-					"Features go unused",
-					"Support tickets increase",
-					"Revenue potential is lost",
+					"• Users drop off after signing up",
+					"• Features go unused",
+					"• Support tickets increase",
+					"• Revenue potential is lost",
 				],
 			},
 			{ type: "paragraph", text: "With a DAP:" },
 			{
 				type: "list",
 				items: [
-					"Faster onboarding",
-					"Higher feature adoption",
-					"Better user experience",
-					"Increased retention",
+					"• Faster onboarding",
+					"• Higher feature adoption",
+					"• Better user experience",
+					"• Increased retention",
 				],
 			},
 		],
@@ -2686,9 +2686,9 @@ sections: [
 			{
 				type: "list",
 				items: [
-					"Better onboarding \u2192 Whatfix / WalkMe",
-					"Better analytics \u2192 Pendo",
-					"Faster setup \u2192 Userlane",
+					"• Better onboarding \u2192 Whatfix / WalkMe",
+					"• Better analytics \u2192 Pendo",
+					"• Faster setup \u2192 Userlane",
 				],
 			},
 			{

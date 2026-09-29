@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 import { posts } from "@/data/insights";
 import PostTemplate from "@/components/insights/post/PostTemplate";
+import FinalCta from "@/components/solution/FinalCta";
 
 export function generateStaticParams() {
 	return posts.map((p) => ({ slug: p.slug }));
@@ -23,7 +24,12 @@ function InsightPost({ params }) {
 	const prevPost = index > 0 ? posts[index - 1] : null;
 	const nextPost = index < posts.length - 1 ? posts[index + 1] : null;
 
-	return <PostTemplate post={post} prevPost={prevPost} nextPost={nextPost} />;
+	return (
+		<>
+			<PostTemplate post={post} prevPost={prevPost} nextPost={nextPost} />
+			<FinalCta />
+		</>
+	);
 }
 
 export default InsightPost;

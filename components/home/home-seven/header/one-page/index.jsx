@@ -14,7 +14,7 @@ const navItems = [
 	},
 	{
 		label: "Platform",
-		href: "/productBrief",
+		href: "/platform",
 	},
 	{
 		label: "Solution",

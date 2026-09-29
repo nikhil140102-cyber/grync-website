@@ -1,0 +1,153 @@
+.wrap {
+	padding-bottom: 24px;
+}
+
+.navBar {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 8px;
+	background: #f4f5f7;
+	border-radius: 999px;
+	padding: 10px;
+	flex-wrap: wrap;
+}
+
+.navItem {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+	/* content-hugging, not stretched — each tab is only as wide as its
+	   own icon + label, matching the reference (equal-width flex:1 was
+	   the Solution page sub-nav's pattern, not this one) */
+	flex: 0 0 auto;
+	background: transparent;
+	border: 1.5px solid transparent;
+	border-radius: 999px;
+	padding: 10px 14px;
+	cursor: pointer;
+	transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.iconStack {
+	position: relative;
+	display: inline-block;
+	width: 22px;
+	height: 22px;
+	flex-shrink: 0;
+}
+
+.navIcon {
+	width: 22px;
+	height: 22px;
+	object-fit: contain;
+}
+
+.iconStack .navIcon {
+	position: absolute;
+	inset: 0;
+	transition: opacity 0.15s ease;
+}
+
+.iconDefault {
+	opacity: 1;
+}
+
+.iconHover {
+	opacity: 0;
+}
+
+.iconActiveImg {
+	opacity: 0;
+}
+
+.navItem:hover .iconDefault {
+	opacity: 0;
+}
+.navItem:hover .iconHover {
+	opacity: 1;
+}
+
+.navItemActive .iconDefault,
+.navItemActive .iconHover {
+	opacity: 0 !important;
+}
+.navItemActive .iconActiveImg {
+	opacity: 1 !important;
+}
+
+.navLabel {
+	font-size: 15px;
+	font-weight: 600;
+	color: #4a4f5c;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+/* active tab: gradient border + light peach fill + pink text — same
+   dual-background trick used on the Solution page's sub-nav */
+.navItemActive {
+	background-image: linear-gradient(#fdf1e8, #fdf1e8),
+		linear-gradient(90deg, #d6266f 0%, #f4602a 100%);
+	background-origin: border-box;
+	background-clip: padding-box, border-box;
+}
+
+.navItemActive .navLabel {
+	color: #c2255c;
+}
+
+/* ============ RESPONSIVE ============ */
+
+@media (max-width: 900px) {
+	.navBar {
+		border-radius: 20px;
+	}
+	.navItem {
+		padding: 10px 12px;
+	}
+	.navLabel {
+		font-size: 12px;
+		white-space: normal;
+	}
+}
+
+/* mobile: 2-column card grid (matches the reference screenshot) —
+   icon + 2-line label per item, 5 items auto-place into 2 columns so
+   the 5th ("Video/audio analysis") falls alone into row 3, col 1.
+   Desktop/tablet pill-row layout above is untouched. */
+@media (max-width: 680px) {
+	.navBar {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 10px;
+		border-radius: 20px;
+		padding: 14px;
+	}
+	.navItem {
+		justify-content: flex-start;
+		border-radius: 16px;
+	}
+	.navLabel {
+		white-space: normal;
+		text-align: left;
+		line-height: 1.3;
+	}
+}
+
+@media (max-width: 560px) {
+	.navItem {
+		gap: 8px;
+		padding: 8px 12px;
+	}
+	.iconStack,
+	.navIcon {
+		width: 16px;
+		height: 16px;
+	}
+	.navLabel {
+		font-size: 11px;
+	}
+}

@@ -47,14 +47,13 @@ const TeamSection = () => {
 					<div className={styles.eyebrow}>WHO WE ARE</div>
 
 					<p className={styles.paragraph}>
-						A Kolkata-based startup, founded in 2025 and the team behind
-						India&apos;s first Insights-to-Monetization platform.
+					A Kolkata-based startup, founded in 2025, the team behind grync.io, the AI-powered execution layer for enterprise operations, built on a single idea: insights to actionability.
+ 
+
 					</p>
 
 					<p className={styles.paragraph}>
-						In plain terms: we help businesses turn customer data and
-						product insights into real, measurable revenue, using AI and a
-						product-led growth approach.
+						In plain terms: every business already has the insights it needs. We built grync.io to close the loop on business outcomes based on business signals. Turning those insights into action automatically, across revenue and operations alike, so the right thing happens while it still matters.
 					</p>
 				</div>
 

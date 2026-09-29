@@ -132,9 +132,6 @@
 		padding: 10px 12px;
 		justify-content: flex-start;
 	}
-	.navItem:last-child {
-		grid-column: 1 / -1;
-	}
 	.navLabel span {
 		font-size: 12px;
 	}

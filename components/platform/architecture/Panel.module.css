@@ -1,0 +1,897 @@
+.panel {
+	background: #fafafa;
+	border: 1px solid #eef0f3;
+	border-radius: 20px;
+	padding: 44px;
+}
+
+/* ============ INTRO ============ */
+
+.introHeading {
+	font-size: 36px !important;
+	line-height: 1.35 !important;
+	font-weight: 800;
+	color: #14161a;
+	margin: 0 0 16px;
+	letter-spacing: -0.4px !important;
+	word-spacing: normal !important;
+}
+
+.orangeText {
+	color: #f4602a;
+}
+
+.introSubPink {
+	font-size: 18px !important;
+	line-height: 1.6;
+	font-weight: 600;
+	color: #c2255c;
+	margin: 0 0 8px;
+	letter-spacing: normal !important;
+	word-spacing: normal !important;
+}
+
+.introSubGray {
+	font-size: 18px !important;
+	line-height: 1.6;
+	color: #667082;
+	margin: 0 0 32px;
+	letter-spacing: normal !important;
+	word-spacing: normal !important;
+}
+
+/* ============ DARK DIAGRAM CARD ============ */
+
+.diagramCard {
+	background: #100b18;
+	border-radius: 16px;
+	padding: 36px 40px 40px;
+	margin-bottom: 40px;
+}
+
+/* exported diagram images (core / ai-engine / revenue-signals /
+   automation) — the dark card, connectors and any baked-in closing
+   line are already part of the image, same "one image per tab"
+   pattern used on the Solution page's tab diagrams */
+.diagramImage {
+	display: block;
+	width: 100%;
+	height: auto;
+	border-radius: 16px;
+	margin-bottom: 32px;
+}
+
+.diagramTopLabel {
+	font-size: 14px !important;
+	color: #a9adba;
+	margin: 0 0 24px;
+	letter-spacing: normal !important;
+	word-spacing: normal !important;
+}
+
+.sourceRow {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 16px;
+	margin-bottom: 20px;
+}
+
+.sourceBox {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	gap: 6px;
+	background: #1b1526;
+	border: 1px solid rgba(255, 255, 255, 0.08);
+	border-radius: 12px;
+	padding: 22px 18px;
+}
+
+.sourceTitle {
+	font-size: 15px;
+	font-weight: 700;
+	color: #fff;
+}
+
+.sourceSees {
+	font-size: 12.5px;
+	color: #a9adba;
+}
+
+.sourceBlind {
+	font-size: 12px;
+	font-weight: 600;
+	color: #e8497a;
+}
+
+.midLabel {
+	text-align: center;
+	font-size: 13px !important;
+	color: #7d8291;
+	margin: 0 0 4px;
+	letter-spacing: normal !important;
+	word-spacing: normal !important;
+}
+
+.arrowDown {
+	text-align: center;
+	color: #5c616f;
+	font-size: 18px;
+	line-height: 1;
+	margin: 6px 0;
+}
+
+.joinBox {
+	background: linear-gradient(180deg, #2a0f1c 0%, #200a15 100%);
+	border: 1px solid #7a1f42;
+	border-radius: 14px;
+	padding: 24px 28px;
+	text-align: center;
+	max-width: 640px;
+	margin: 0 auto;
+}
+
+.joinBrand {
+	display: inline-flex;
+	align-items: center;
+	gap: 6px;
+	font-size: 13px;
+	font-weight: 700;
+	color: #f0a3c1;
+	margin-bottom: 10px;
+}
+
+.joinBrandMark {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 18px;
+	height: 18px;
+	border-radius: 50%;
+	background: linear-gradient(135deg, #d6266f, #f4602a);
+	color: #fff;
+	font-size: 11px;
+	font-weight: 800;
+}
+
+.joinHeading {
+	display: block;
+	font-size: 18px;
+	font-weight: 800;
+	color: #fff;
+	margin-bottom: 8px;
+}
+
+.joinSub {
+	font-size: 13.5px !important;
+	line-height: 1.6;
+	color: #c9a3b4;
+	margin: 0;
+	letter-spacing: normal !important;
+	word-spacing: normal !important;
+}
+
+.patternPill {
+	display: block;
+	text-align: center;
+	font-size: 13px;
+	color: #a9adba;
+	background: #1b1526;
+	border: 1px solid rgba(255, 255, 255, 0.1);
+	border-radius: 999px;
+	padding: 10px 20px;
+	max-width: fit-content;
+	margin: 0 auto;
+}
+
+.actionBox {
+	background: #1b1526;
+	border: 1px solid rgba(255, 255, 255, 0.08);
+	border-radius: 14px;
+	padding: 24px 28px;
+	text-align: center;
+	max-width: 640px;
+	margin: 0 auto;
+}
+
+.actionHeading {
+	display: block;
+	font-size: 17px;
+	font-weight: 800;
+	color: #fff;
+	margin-bottom: 8px;
+}
+
+.actionSub {
+	font-size: 13px !important;
+	line-height: 1.6;
+	color: #a9adba;
+	margin: 0;
+	letter-spacing: normal !important;
+	word-spacing: normal !important;
+}
+
+.diagramCallout {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+	position: relative;
+	background: linear-gradient(90deg, #fdece0 0%, #fde3e0 100%);
+	border-radius: 12px;
+	padding: 14px 41px;
+	margin: 28px auto 0;
+	max-width: max-content;
+	text-align: center;
+}
+
+.diagramCallout p {
+	margin: 0;
+	font-size: 20px !important;
+	line-height: 1.5;
+	color: #14161a;
+	letter-spacing: normal !important;
+	word-spacing: normal !important;
+}
+
+.calloutRed {
+	color: #e8392a;
+	font-weight: 700;
+}
+
+.calloutStar {
+	position: absolute;
+	top: -10px;
+	right: 24px;
+	display: grid;
+	place-items: center;
+	filter: drop-shadow(0 4px 6px rgba(244, 96, 42, 0.35));
+}
+
+/* ============ COMPARE ============ */
+
+.compareHeading {
+	font-size: 24px !important;
+	font-weight: 800;
+	color: #14161a;
+	margin: 0 0 20px;
+	letter-spacing: normal !important;
+	word-spacing: normal !important;
+}
+
+.compareGrid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 20px;
+	margin-bottom: 40px;
+}
+
+.compareCard {
+	border-radius: 18px;
+	padding: 26px 28px 28px;
+	border: 1px solid transparent;
+}
+
+.compareCardMuted {
+	background: #fdf1de;
+	border-color: #f5dcae;
+}
+
+.compareCardPink {
+	background: #fdeaf0;
+	border-color: #f4b8cf;
+}
+
+.compareCardTitle {
+	font-size: 18px;
+	font-weight: 800;
+	color: #14161a;
+	margin: 0 0 16px;
+}
+
+.compareList {
+	margin: 0;
+	padding-left: 20px;
+	list-style: disc outside;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.compareList li {
+	font-size: 14px;
+	line-height: 1.5;
+	color: #3a3d45;
+}
+
+/* ============ BOTTOM CARDS ============ */
+
+.bottomGrid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 20px;
+	margin-bottom: 40px;
+}
+
+.bottomCard {
+	background: #100b18;
+	border-radius: 14px;
+	padding: 26px 24px 28px;
+}
+
+.bottomCardTitle {
+	font-size: 18px;
+	font-weight: 800;
+	color: #fff;
+	margin: 0 0 10px;
+}
+
+.bottomCardText {
+	font-size: 14px !important;
+	line-height: 1.6;
+	color: #a9adba;
+	margin: 0;
+	letter-spacing: normal !important;
+	word-spacing: normal !important;
+}
+
+.calloutSub {
+	display: block;
+	margin-top: 6px;
+	font-size: 12.5px;
+	color: #667082;
+	font-weight: 500;
+}
+
+.closingNote {
+	font-size: 18px !important;
+	line-height: 1.7;
+	color: #667082;
+	margin: 0 0 24px;
+	letter-spacing: normal !important;
+	word-spacing: normal !important;
+}
+
+/* ============ VIDEO / AUDIO TAB ============ */
+
+.conversationGrid {
+	display: grid;
+	grid-template-columns: 1fr 1.1fr;
+	gap: 20px;
+	margin-bottom: 24px;
+}
+
+.cueList {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+}
+
+.cueCard {
+	background: #1b1526;
+	border: 1px solid rgba(255, 255, 255, 0.08);
+	border-radius: 12px;
+	padding: 14px 16px;
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
+}
+
+.cueTitle {
+	font-size: 14px;
+	font-weight: 700;
+	color: #fff;
+}
+
+.cueSub {
+	font-size: 12px;
+	color: #a9adba;
+	line-height: 1.4;
+}
+
+.conversationCard {
+	background: #1b1526;
+	border: 1px solid rgba(255, 255, 255, 0.1);
+	border-radius: 14px;
+	padding: 20px 22px;
+}
+
+.conversationLabel {
+	display: block;
+	font-size: 11px;
+	font-weight: 700;
+	letter-spacing: 0.06em;
+	color: #7d8291;
+	margin-bottom: 14px;
+}
+
+.streamRow {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	background: #100b18;
+	border-radius: 10px;
+	padding: 12px 14px;
+	font-size: 13px;
+	font-weight: 600;
+	color: #e4e6eb;
+}
+
+.streamIcon {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 22px;
+	height: 22px;
+	border-radius: 50%;
+	background: linear-gradient(135deg, #d6266f, #f4602a);
+	color: #fff;
+	flex-shrink: 0;
+}
+
+.outputLabel {
+	display: block;
+	font-size: 11px;
+	font-weight: 700;
+	letter-spacing: 0.06em;
+	color: #7d8291;
+	margin-bottom: 10px;
+}
+
+.structuredList {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+.structuredRow {
+	display: flex;
+	align-items: flex-start;
+	gap: 10px;
+	background: #100b18;
+	border-radius: 10px;
+	padding: 10px 14px;
+}
+
+.signalTag {
+	flex-shrink: 0;
+	font-size: 10.5px;
+	font-weight: 800;
+	letter-spacing: 0.04em;
+	color: #e8497a;
+	background: rgba(232, 73, 122, 0.12);
+	border-radius: 6px;
+	padding: 3px 8px;
+	margin-top: 1px;
+}
+
+.signalText {
+	font-size: 12.5px;
+	line-height: 1.5;
+	color: #d3d5db;
+}
+
+/* ============ AI ENGINE TAB ============ */
+
+.engineFlowRow {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+	margin-bottom: 24px;
+}
+
+.flowStack {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	flex-shrink: 0;
+}
+
+.flowStep {
+	background: #1b1526;
+	border: 1px solid rgba(255, 255, 255, 0.08);
+	border-radius: 10px;
+	padding: 12px 18px;
+	font-size: 13px;
+	font-weight: 600;
+	color: #d3d5db;
+	text-align: center;
+}
+
+.flowArrowRight {
+	flex-shrink: 0;
+	color: #5c616f;
+	font-size: 20px;
+}
+
+.engineFlowRow .joinBox {
+	margin: 0;
+	flex: 1;
+	text-align: left;
+}
+
+.checklistRow {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+}
+
+.checklistPill {
+	background: #1b1526;
+	border: 1px solid rgba(255, 255, 255, 0.1);
+	border-radius: 999px;
+	padding: 8px 16px;
+	font-size: 12.5px;
+	color: #a9adba;
+}
+
+.worksOutGrid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 16px;
+	margin-bottom: 24px;
+}
+
+.worksOutCard {
+	background: #100b18;
+	border-radius: 14px;
+	padding: 22px 24px;
+}
+
+.worksOutTitle {
+	display: block;
+	font-size: 18px;
+	font-weight: 700;
+	color: #fff;
+	margin-bottom: 8px;
+}
+
+.worksOutText {
+	font-size: 15px !important;
+	line-height: 1.6;
+	color: #a9adba;
+	margin: 0;
+	letter-spacing: normal !important;
+	word-spacing: normal !important;
+}
+
+/* ============ REVENUE SIGNALS TAB ============ */
+
+.chipRow {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 12px;
+	margin-bottom: 16px;
+}
+
+.chip {
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
+	background: #1b1526;
+	border: 1px solid rgba(255, 255, 255, 0.08);
+	border-radius: 12px;
+	padding: 14px 14px 16px;
+	text-align: center;
+}
+
+.chip strong {
+	font-size: 13px;
+	color: #fff;
+}
+
+.chip span {
+	font-size: 11.5px;
+	color: #a9adba;
+}
+
+.resultRow {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 14px;
+	margin-top: 20px;
+}
+
+.resultCard {
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
+	border-radius: 12px;
+	padding: 16px 18px;
+}
+
+.resultCardGreen {
+	background: #16301f;
+	border: 1px solid rgba(23, 164, 99, 0.4);
+}
+.resultCardGreen strong {
+	color: #4ade80;
+	font-size: 14px;
+}
+.resultCardGreen span {
+	color: #9fd8b3;
+	font-size: 12px;
+}
+
+.resultCardDark {
+	background: #1b1526;
+	border: 1px solid rgba(255, 255, 255, 0.08);
+}
+.resultCardDark strong {
+	color: #fff;
+	font-size: 14px;
+}
+.resultCardDark span {
+	color: #a9adba;
+	font-size: 12px;
+}
+
+/* revenue table — same card/row pattern as the Solution page tabs */
+
+.tableCard {
+	background: #fff;
+	border: 1px solid #eef0f3;
+	border-radius: 14px;
+	overflow: hidden;
+	margin-bottom: 24px;
+}
+
+.tableHeaderRow {
+	display: grid;
+	grid-template-columns: 1fr 1.6fr;
+	background: #f4f5f7;
+	padding: 14px 24px;
+}
+
+.tableHeaderRow span {
+	font-size: 11px;
+	font-weight: 700;
+	letter-spacing: 0.05em !important;
+	word-spacing: normal !important;
+	text-transform: uppercase;
+	color: #8a8f98;
+}
+
+.tableRow {
+	display: grid;
+	grid-template-columns: 1fr 1.6fr;
+	gap: 16px;
+	padding: 18px 24px;
+	border-top: 1px solid #f0eef2;
+}
+
+.tableMoment {
+	font-size: 14px;
+	font-weight: 700;
+	color: #14161a;
+	letter-spacing: normal !important;
+	word-spacing: normal !important;
+}
+
+.tableAction {
+	font-size: 14px;
+	line-height: 1.6;
+	color: #667082;
+	letter-spacing: normal !important;
+	word-spacing: normal !important;
+}
+
+/* ============ AUTOMATION TAB ============ */
+
+.columnsGrid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 16px;
+	margin-top: 24px;
+}
+
+.columnCard {
+	background: #1b1526;
+	border: 1px solid rgba(255, 255, 255, 0.08);
+	border-radius: 14px;
+	padding: 20px 22px;
+}
+
+.columnTitle {
+	display: block;
+	font-size: 14px;
+	font-weight: 700;
+	color: #fff;
+	margin-bottom: 12px;
+}
+
+.columnList {
+	margin: 0;
+	padding-left: 18px;
+	list-style: disc outside;
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+.columnList li {
+	font-size: 13px;
+	line-height: 1.5;
+	color: #d3d5db;
+}
+
+.actionsGrid {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	gap: 14px;
+	margin-bottom: 24px;
+}
+
+.actionCard {
+	/* --accent is set inline per card (see Panel.jsx) so each of the
+	   5 actions reads as distinct rather than 5 copies of one card */
+	background: radial-gradient(circle, #2e1a3c 0%, #101828 100%);
+	border: 1px solid color-mix(in srgb, var(--accent, #d6266f) 30%, transparent);
+	border-radius: 12px;
+	padding: 18px 16px;
+}
+
+.actionIcon {
+	display: block;
+	width: 28px;
+	height: 28px;
+	object-fit: contain;
+	margin-bottom: 14px;
+}
+
+.actionCardTitle {
+	display: block;
+	font-size: 15px;
+	font-weight: 700;
+	color: #fff;
+	margin-bottom: 8px;
+}
+
+.actionCardText {
+	font-size: 12px !important;
+	line-height: 1.5;
+	color: #a9adba;
+	margin: 0;
+	letter-spacing: normal !important;
+	word-spacing: normal !important;
+}
+
+/* "You stay in control:" — dark rounded card, matches the reference
+   (was rendering as plain unstyled text before) */
+.controlCard {
+	background: radial-gradient(circle, #2e1a3c 0%, #101828 100%);
+	border-radius: 16px;
+	padding: 28px 32px;
+	margin-bottom: 24px;
+}
+
+.controlHeading {
+	font-size: 18px !important;
+	font-weight: 800;
+	color: #fff;
+	margin: 0 0 10px;
+	letter-spacing: normal !important;
+	word-spacing: normal !important;
+}
+
+.controlText {
+	font-size: 14px !important;
+	line-height: 1.7;
+	color: #a9adba;
+	margin: 0;
+	letter-spacing: normal !important;
+	word-spacing: normal !important;
+}
+
+/* ============ CLOSING CALLOUT ============ */
+
+.closingCallout {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+	position: relative;
+	background: linear-gradient(90deg, #fdece0 0%, #fde3e0 100%);
+	border-radius: 12px;
+	padding: 14px 41px;
+	margin: 0 auto;
+	max-width: max-content;
+	text-align: center;
+}
+
+.closingCallout p {
+	margin: 0;
+	font-size: 20px !important;
+	line-height: 1.5;
+	color: #14161a;
+	letter-spacing: normal !important;
+	word-spacing: normal !important;
+}
+
+.closingCallout .calloutStar {
+	top: -12px;
+	right: 30px;
+}
+
+/* ============ RESPONSIVE ============ */
+
+@media (max-width: 900px) {
+	.panel {
+		padding: 32px 24px 36px;
+	}
+	.introHeading {
+		font-size: 24px !important;
+	}
+	.diagramCard {
+		padding: 28px 20px 32px;
+	}
+	.sourceRow {
+		grid-template-columns: 1fr;
+	}
+	.compareGrid {
+		grid-template-columns: 1fr;
+	}
+	.bottomGrid {
+		grid-template-columns: 1fr;
+	}
+	.conversationGrid {
+		grid-template-columns: 1fr;
+	}
+	.engineFlowRow {
+		flex-direction: column;
+		align-items: stretch;
+	}
+	.flowStack {
+		flex-direction: row;
+	}
+	.flowArrowRight {
+		align-self: center;
+		transform: rotate(90deg);
+	}
+	.worksOutGrid {
+		grid-template-columns: 1fr;
+	}
+	.chipRow {
+		grid-template-columns: 1fr 1fr;
+	}
+	.resultRow {
+		grid-template-columns: 1fr;
+	}
+	.tableHeaderRow,
+	.tableRow {
+		grid-template-columns: 1fr;
+		gap: 4px;
+	}
+	.columnsGrid {
+		grid-template-columns: 1fr;
+	}
+	.actionsGrid {
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
+@media (max-width: 560px) {
+	.panel {
+		padding: 26px 18px 30px;
+	}
+	.introHeading {
+		font-size: 20px !important;
+	}
+	.introSubPink,
+	.introSubGray {
+		font-size: 12.5px !important;
+	}
+	.joinBox,
+	.actionBox {
+		padding: 20px 18px;
+	}
+	.diagramCallout,
+	.closingCallout {
+		padding: 16px 20px;
+	}
+	.diagramCallout p,
+	.closingCallout p {
+		font-size: 12.5px !important;
+	}
+}

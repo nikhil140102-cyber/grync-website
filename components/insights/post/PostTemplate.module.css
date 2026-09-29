@@ -15,7 +15,7 @@
 .featureImage {
 	display: block;
 	width: 100%;
-	aspect-ratio: 16 / 9;
+	aspect-ratio: 16 / 7;
 	object-fit: cover;
 	border-radius: 16px;
 }
@@ -286,43 +286,82 @@
 
 .list {
 	margin: 0 0 22px;
-	padding-left: 20px;
-	display: flex;
-	flex-direction: column;
-	gap: 8px;
+	padding-left: 22px;
+	list-style: disc outside;
 }
 
 .list li {
 	font-size: 15.5px;
 	line-height: 1.65;
 	color: #4a4f5c;
-}
-
-.faqList {
-	display: flex;
-	flex-direction: column;
-	gap: 22px;
 	margin-bottom: 8px;
 }
 
-.faqItem {
-	display: flex;
-	flex-direction: column;
+.list li:last-child {
+	margin-bottom: 0;
 }
 
-.faqItem strong {
-	display: block;
+.list li::marker {
+	color: #c2255c;
+}
+
+.faqAccordion {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 8px;
+	border-top: 1px solid #eef0f3;
+}
+
+.faqRow {
+	border-bottom: 1px solid #eef0f3;
+}
+
+.faqQuestion {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 16px;
+	background: none;
+	border: none;
+	padding: 18px 4px;
+	cursor: pointer;
+	text-align: left;
+	font-family: inherit;
 	font-size: 16px;
 	font-weight: 700;
 	color: #14161a;
-	margin-bottom: 6px;
 }
 
-.faqItem p {
+.faqChevron {
+	flex-shrink: 0;
+	color: #8a8f98;
+	transform: rotate(-90deg);
+	transition: transform 0.25s ease;
+}
+
+.faqChevronOpen {
+	transform: rotate(0deg);
+	color: #c2255c;
+}
+
+/* the 0fr \u2192 1fr grid-row trick — animates height without ever
+   needing to know the answer's actual pixel height in advance */
+.faqAnswerWrap {
+	display: grid;
+	transition: grid-template-rows 0.3s ease;
+}
+
+.faqAnswerInner {
+	overflow: hidden;
+}
+
+.faqAnswerInner p {
 	font-size: 15px;
 	line-height: 1.7;
 	color: #4a4f5c;
 	margin: 0;
+	padding: 0 4px 18px;
 }
 
 @media (max-width: 560px) {
@@ -336,11 +375,13 @@
 	.list li {
 		font-size: 14px;
 	}
-	.faqItem strong {
+	.faqQuestion {
 		font-size: 14.5px;
+		padding: 15px 2px;
 	}
-	.faqItem p {
+	.faqAnswerInner p {
 		font-size: 13.5px;
+		padding: 0 2px 15px;
 	}
 }
 

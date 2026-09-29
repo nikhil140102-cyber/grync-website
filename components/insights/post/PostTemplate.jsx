@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
+import { ChevronDown } from "lucide-react";
 import styles from "./PostTemplate.module.css";
 
 const PostTemplate = ({ post, prevPost, nextPost }) => {
@@ -11,6 +12,19 @@ const PostTemplate = ({ post, prevPost, nextPost }) => {
 	const [activeSectionId, setActiveSectionId] = useState(
 		hasSections ? post.sections[0].id : null
 	);
+	/* accordion state for FAQ blocks — keyed by "sectionId-blockIndex-itemIndex"
+	   so multiple FAQ blocks on the same page (unlikely, but possible) don't
+	   fight over one shared open index. First FAQ item starts open, matching
+	   the homepage FAQ section's pattern. */
+	const getFirstFaqKey = () => {
+		if (!hasSections) return null;
+		for (const section of post.sections) {
+			const blockIndex = section.blocks.findIndex((b) => b.type === "faq");
+			if (blockIndex !== -1) return `${section.id}-${blockIndex}-0`;
+		}
+		return null;
+	};
+	const [openFaqKey, setOpenFaqKey] = useState(getFirstFaqKey);
 
 	/* real scroll-spy — tracks which section is actually in view and
 	   highlights that TOC entry, instead of always highlighting the
@@ -60,7 +74,7 @@ const PostTemplate = ({ post, prevPost, nextPost }) => {
 		return () => ctx.revert();
 	}, []);
 
-	const renderBlock = (block, i) => {
+	const renderBlock = (block, i, sectionId) => {
 		switch (block.type) {
 			case "paragraph":
 				return (
@@ -138,13 +152,41 @@ const PostTemplate = ({ post, prevPost, nextPost }) => {
 
 			case "faq":
 				return (
-					<div key={i} className={styles.faqList}>
-						{block.items.map((item, j) => (
-							<div key={j} className={styles.faqItem}>
-								<strong>{item.question}</strong>
-								<p>{item.answer}</p>
-							</div>
-						))}
+					<div key={i} className={styles.faqAccordion}>
+						{block.items.map((item, j) => {
+							const faqKey = `${sectionId}-${i}-${j}`;
+							const isOpen = openFaqKey === faqKey;
+							return (
+								<div key={j} className={styles.faqRow}>
+									<button
+										type="button"
+										className={styles.faqQuestion}
+										onClick={() =>
+											setOpenFaqKey(isOpen ? null : faqKey)
+										}
+										aria-expanded={isOpen}
+									>
+										<span>{item.question}</span>
+										<ChevronDown
+											size={18}
+											className={`${styles.faqChevron} ${
+												isOpen ? styles.faqChevronOpen : ""
+											}`}
+										/>
+									</button>
+									<div
+										className={styles.faqAnswerWrap}
+										style={{
+											gridTemplateRows: isOpen ? "1fr" : "0fr",
+										}}
+									>
+										<div className={styles.faqAnswerInner}>
+											<p>{item.answer}</p>
+										</div>
+									</div>
+								</div>
+							);
+						})}
 					</div>
 				);
 
@@ -205,7 +247,7 @@ const PostTemplate = ({ post, prevPost, nextPost }) => {
 									</h2>
 
 									{section.blocks.map((block, i) =>
-										renderBlock(block, i)
+										renderBlock(block, i, section.id)
 									)}
 								</section>
 							))}

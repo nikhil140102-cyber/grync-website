@@ -85,7 +85,7 @@ export const panelContent = {
 		subtextPink:
 			"Connecting signals is only half the job. The intelligence engine is what separates the moment worth acting on from the noise, and works out exactly what to do about it.",
 		subtextGray:
-			"Is this real? · What caused it? · Who owns it? · How long is the window?",
+			"Reads every signal - structured or unstructured, then asks what a good analyst would -<br> Is this real? · What caused it? · Who owns it? · How long is the window?",
 		diagramImage: "/images/platform/p2.png",
 		worksOut: {
 			heading: "What the engine works out:",
@@ -120,7 +120,7 @@ export const panelContent = {
 		subtextPink:
 			"Some signals mean revenue, and some quietly drain it. grync.io surfaces both, a customer ready to grow, an account ready to churn, and the broken process bleeding margin behind the scenes, and acts on them the same day.",
 		subtextGray:
-			"Usage climbing · Right people engaging · A process breaks mid-flow · An approval stuck in queue",
+			"Usage climbing · The right people engaging · A process breaking mid-flow → Acted on while it still moves revenue",
 		diagramImage: "/images/platform/p4.png",
 		table: {
 			heading: "The revenue moments it catches:",
@@ -128,7 +128,7 @@ export const panelContent = {
 				{
 					moment: "Ready to buy",
 					action:
-						"Signals confirm intent. The offer fires the same day, so the customer’s window is captured, not missed.",
+						"Signals confirm intent. The offer fires the same day, to that customer, with the reason attached.",
 				},
 				{
 					moment: "Ready to expand",
@@ -138,22 +138,22 @@ export const panelContent = {
 				{
 					moment: "About to slip",
 					action:
-						"Early churn risk appears before the renewal, not after the deal is lost.",
+						"Early churn cues appear. The owner is alerted before the renewal, not after the loss.",
 				},
 				{
 					moment: "A process breaks mid-flow",
 					action:
-						"The broken step is caught and reassigned to an owner before revenue is lost.",
+						"The broken step is caught and reassigned to an owner before it stalls revenue.",
 				},
 				{
-					moment: "An approval stuck in queue",
+					moment: "An approval stuck in the queue",
 					action:
-						"Routed for approval automatically, so the deal doesn’t wait on a person.",
+						"Routed for approval automatically, so the deal doesn’t sit waiting.",
 				},
 				{
-					moment: "A manual step delaying revenue",
+					moment: "A manual step delaying response",
 					action:
-						"Flagged to the right person before the delay costs the conversion.",
+						"Flagged to the owner before the delay costs you the conversion.",
 				},
 			],
 		},
@@ -275,7 +275,10 @@ const Panel = ({ activeId }) => {
 				<span className={styles.orangeText}>{data.headingHighlight}</span>
 			</h3>
 			<p className={styles.introSubPink}>{data.subtextPink}</p>
-			<p className={styles.introSubGray}>{data.subtextGray}</p>
+			<p
+				className={styles.introSubGray}
+				dangerouslySetInnerHTML={{ __html: data.subtextGray }}
+			/>
 
 			{/* ================= CORE ================= */}
 			{activeId === "core" && (

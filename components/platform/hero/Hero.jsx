@@ -82,7 +82,7 @@ const PlatformHero = () => {
 						automatically, inside the limits you set.
 					</p>
 
-					<Link href="/contact-us-page" className={styles.ctaButton}>
+					<Link href="https://bookings.cloud.microsoft/bookwithme/user/a6861de85f98441aaa5e5134a58b87a3%40grync.io/meetingtype/wDeA_LiHpEK46Qmt7Mn2FA2?anonymous&ismsaljsauthenabled" className={styles.ctaButton}>
 						Book a demo <span>→</span>
 					</Link>
 				</div>

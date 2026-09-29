@@ -124,6 +124,7 @@
 	display: block;
 	width: 100%;
 	height: auto;
+
 }
 
 /* ============ RESPONSIVE ============ */
@@ -152,7 +153,10 @@
 
 @media (max-width: 680px) {
 	.hero {
-		padding: 70px 0 60px;
+		padding: 110px 0 60px;
+	}
+	.left{
+		margin-top: 0px;
 	}
 	.eyebrow {
 		font-size: 9px;
@@ -160,11 +164,29 @@
 	.heading {
 		font-size: 26px !important;
 	}
+	/* below this width, the three hand-broken desktop lines ("The
+	   business signal" / "execution layer that sits on" / "top of
+	   everything you run") no longer fit their own line each — the
+	   middle one wraps a second time and strands a lone "on". Instead
+	   of forcing each .headingLine onto its own row, let them flow as
+	   one heading and wrap naturally; ::after adds back the space that
+	   JSX's whitespace collapsing removes between the block elements. */
+	.headingLine {
+		display: inline;
+	}
+	.headingLine::after {
+		content: " ";
+	}
 	.description {
 		font-size: 12px !important;
 	}
 	.badge {
-		font-size: 12px;
-		padding: 8px 14px;
+		font-size: 9px;
+        padding: 2px 8px;
+
 	}
+	.heroImage {
+
+	scale: 1.2;
+}
 }

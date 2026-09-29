@@ -397,7 +397,7 @@ const Panel = ({ activeId }) => {
 					<h3 className={styles.compareHeading}>{data.table.heading}</h3>
 					<div className={styles.tableCard}>
 						<div className={styles.tableHeaderRow}>
-							<span>The moment</span>
+							<span className="tablehead1">The moment</span>
 							<span>What grync.io does</span>
 						</div>
 						{data.table.rows.map((row, i) => (

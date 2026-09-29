@@ -61,10 +61,18 @@
 	.section {
 		padding: 64px 0 70px;
 	}
+	.header {
+	width: 100%;
+	padding: 0 20px 40px;
+}
 	.heading {
-		font-size: 22px !important;
+		font-size: 24px !important;
 	}
 	.subheading {
-		font-size: 13px !important;
+		font-size: 16px !important;
 	}
+	.container {
+	width: 100%;
+	padding: 0 20px;
+}
 }

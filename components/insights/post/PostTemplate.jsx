@@ -77,10 +77,15 @@ const PostTemplate = ({ post, prevPost, nextPost }) => {
 	const renderBlock = (block, i, sectionId) => {
 		switch (block.type) {
 			case "paragraph":
+				/* text may contain real <a href="..."> markup (inline links
+				   inside a paragraph) — rendered as HTML so the tags become
+				   actual links instead of printing literally as text */
 				return (
-					<p key={i} className={styles.paragraph}>
-						{block.text}
-					</p>
+					<p
+						key={i}
+						className={styles.paragraph}
+						dangerouslySetInnerHTML={{ __html: block.text }}
+					/>
 				);
 
 			case "subheading":
@@ -100,16 +105,18 @@ const PostTemplate = ({ post, prevPost, nextPost }) => {
 
 			case "highlight":
 				return (
-					<p key={i} className={styles.highlight}>
-						{block.text}
-					</p>
+					<p
+						key={i}
+						className={styles.highlight}
+						dangerouslySetInnerHTML={{ __html: block.text }}
+					/>
 				);
 
 			case "list":
 				return (
 					<ul key={i} className={styles.list}>
 						{block.items.map((item, j) => (
-							<li key={j}>{item}</li>
+							<li key={j} dangerouslySetInnerHTML={{ __html: item }} />
 						))}
 					</ul>
 				);
@@ -181,7 +188,11 @@ const PostTemplate = ({ post, prevPost, nextPost }) => {
 										}}
 									>
 										<div className={styles.faqAnswerInner}>
-											<p>{item.answer}</p>
+											<p
+												dangerouslySetInnerHTML={{
+													__html: item.answer,
+												}}
+											/>
 										</div>
 									</div>
 								</div>

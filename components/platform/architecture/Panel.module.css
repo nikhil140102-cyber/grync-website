@@ -894,4 +894,10 @@
 	.closingCallout p {
 		font-size: 12.5px !important;
 	}
+	.actionsGrid {
+		grid-template-columns: 1fr;
+	}
+	.tableHeaderRow span:first-child {
+	color: #14161a;
+}
 }

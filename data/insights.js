@@ -878,7 +878,7 @@ sections: [
 			},
 			{
 				type: "paragraph",
-				text: "That disconnect is not just an operational inconvenience, it is a documented revenue problem. According to a Gartner survey, 84% of sales leaders report that their analytics tools do not meaningfully impact sales performance. The data exists. The dashboards are built. But without a direct connection from behavioral signal to sales action, the insights never reach the people who could act on them \u2014 and expansion revenue is left on the table.",
+				text: "That disconnect is not just an operational inconvenience, it is a documented revenue problem. <a href=\"https://www.gartner.com/en/newsroom/press-releases/2024-02-06-gartner-survey-finds-sales-analytics-has-less-influence-on-sales-performance-than-what-leadership-expected\" target=\"_blank\" rel=\"noopener noreferrer\">According to a Gartner survey</a>, 84% of sales leaders report that their analytics tools do not meaningfully impact sales performance. The data exists. The dashboards are built. But without a direct connection from behavioral signal to sales action, the insights never reach the people who could act on them \u2014 and expansion revenue is left on the table.",
 			},
 			{
 				type: "table",
@@ -1031,6 +1031,14 @@ sections: [
 			{
 				type: "paragraph",
 				text: "It's not just analytics, it's predictive intelligence for SaaS growth. If you want to predict churn before customers leave, it's time to upgrade your strategy.",
+			},
+			{
+				type: "paragraph",
+				text: "If you want to predict churn before customers leave, it’s time to upgrade your strategy. See how grync.io helps SaaS teams detect churn signals early and take action faster.",
+			},
+				{
+				type: "paragraph",
+				text: "<a href=\"https://bookings.cloud.microsoft/bookwithme/user/a6861de85f98441aaa5e5134a58b87a3%40grync.io/meetingtype/wDeA_LiHpEK46Qmt7Mn2FA2?anonymous&ismsaljsauthenabled\" target=\"_blank\" rel=\"noopener noreferrer\">Request a Demo today and start reducing churn effectively.</a>",
 			},
 		],
 	},
@@ -1349,7 +1357,16 @@ sections: [
 				type: "paragraph",
 				text: "grync.io emerges as a comprehensive growth platform tailored specifically for SaaS companies, empowering them to harness the power of advanced technology. By integrating sophisticated product analytics with user behavior tracking and predictive insights, grync.io enables teams to make informed decisions that drive engagement and revenue.",
 			},
-			{ type: "paragraph", text: "grync.io is designed to help SaaS companies unlock growth through:" },
+			{
+				type: "paragraph",
+				text: "With its automation capabilities, grync.io simplifies the process of nurturing customer relationships and capitalizing on growth opportunities. ",
+			},
+			{
+				type: "paragraph",
+				text: "Here's how grync.io can transform your SaaS growth strategy:",
+			},
+			{ type: "paragraph", 
+			  text: "grync.io is designed to help SaaS companies unlock growth through:" },
 			{
 				type: "list",
 				items: [
@@ -1392,6 +1409,17 @@ sections: [
 					"• AI-powered recommendations",
 					"• Automated growth workflows",
 				],
+			},
+				{
+				type: "paragraph",
+				text: " If you want to drive revenue growth with a SaaS growth platform, it’s time to upgrade your strategy.",
+			},
+				{
+				type: "paragraph",
+				text: " Discover how grync.io helps SaaS teams automate growth, improve retention, and increase revenue.",
+			},	{
+				type: "paragraph",
+				text: "<a href=\"https://bookings.cloud.microsoft/bookwithme/user/a6861de85f98441aaa5e5134a58b87a3%40grync.io/meetingtype/wDeA_LiHpEK46Qmt7Mn2FA2?anonymous&ismsaljsauthenabled\" target=\"_blank\" rel=\"noopener noreferrer\">Book a Demo today</a> and see the platform in action.",
 			},
 		],
 	},
@@ -1472,7 +1500,21 @@ sections: [
 		blocks: [
 			{
 				type: "paragraph",
-				text: "Most product analytics software prioritizes reporting over revenue. In a market where SaaS companies live and die by retention, that gap is costly. By 2026, over 80% of enterprises will have deployed AI to automate workflows, yet most analytics tools still lack the automated action layer needed to convert insights into outcomes. Retention is the single most important lever in SaaS unit economics: companies with best-in-class net revenue retention (120%+) achieve 2\u20133x higher valuations than peers, while those with reactive retention strategies see compounding CAC inflation year-over-year.",
+				text: "Most product analytics software prioritizes reporting over revenue. In a market where SaaS companies live and die by retention, that gap is costly. ",
+			},
+			{
+				type: "paragraph",
+				text: " The numbers make the problem clear: ",
+			},
+			{
+				type: "list",
+				items: [
+					"• By 2026, over 80% of enterprises will have deployed AI to automate workflows, yet most analytics tools still lack the automated action layer needed to convert insights into outcomes.",
+" <a href=\"https://www.gartner.com/en/documents/5236863\" target=\"_blank\" rel=\"noopener noreferrer\">Gartner, Predicts 2024: The Future of AI in Enterprise Software</a>",
+					"•  Retention is the single most important lever in SaaS unit economics: companies with best-in-class net revenue retention (120%+) achieve 2\u20133x higher valuations than peers, while those with reactive retention strategies see compounding CAC inflation year-over-year.",
+					" <a href=\"https://a16z.com/ai-retention-benchmarks/#:~:text=As%20we%27ve%20written%20with,than%20we%27ve%20seen%20before.\" target=\"_blank\" rel=\"noopener noreferrer\">Andreessen Horowitz, The SaaS Growth Playbook, 2024</a>",
+
+				],
 			},
 			{ type: "paragraph", text: "Here is where legacy tools fall short:" },
 			{
@@ -2495,6 +2537,7 @@ sections: [
 		heading: "Why Your Business Needs Marketing Automation SaaS Now",
 		blocks: [
 			{ type: "paragraph", text: "If you want to improve user engagement, increase conversions, and scale marketing efforts, then investing in a marketing automation SaaS platform is no longer optional, it's essential." },
+			{ type: "paragraph", text: "<a href=\"https://bookings.cloud.microsoft/bookwithme/user/a6861de85f98441aaa5e5134a58b87a3%40grync.io/meetin…\" target=\"_blank\" rel=\"noopener noreferrer\">Ready to automate your user journeys and drive real growth? Book a demo today.</a>" },
 		],
 	},
 	{
@@ -2731,8 +2774,22 @@ sections: [
 				type: "quote",
 				text: "But if your goal is real growth, conversions, and revenue impact, grync.io is the best choice.",
 			},
+			{
+				type: "paragraph",
+				text: "Struggling with low adoption and missed revenue opportunities?",
+			},
+			{
+				type: "paragraph",
+				text: "See how grync.io.io helps you convert user actions into measurable growth.",
+			},
+			{
+				type: "paragraph",
+				text: "<a href=\"/contact-us\"  rel=\"noopener noreferrer\">Get started now.</a>",
+			},
 		],
 	},
+
+
 {
 		id: "faq",
 		heading: "FAQs",

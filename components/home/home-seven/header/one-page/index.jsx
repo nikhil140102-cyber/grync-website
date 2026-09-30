@@ -205,15 +205,15 @@ const Header = () => {
 				))}
 
 				<div className="grync-mobile-actions">
-					<Link
+					{/* <Link
 						href="/sign-in"
 						onClick={closeMobileMenu}
 					>
 						Sign In
-					</Link>
+					</Link> */}
 
 					<Link
-						href="/contact-us-page"
+						href="https://outlook.office.com/bookwithme/user/a6861de85f98441aaa5e5134a58b87a3@grync.io/meetingtype/wDeA_LiHpEK46Qmt7Mn2FA2?anonymous&ismsaljsauthenabled&ep=mcard"
 						className="grync-mobile-demo"
 						onClick={closeMobileMenu}
 					>

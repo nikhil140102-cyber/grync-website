@@ -70,15 +70,39 @@ export const panelContent = {
 	},
 
 	"video-audio": {
-		headingPlain: "Your conversations are ",
+		headingPlain: "Your conversations and documents are ",
 		headingHighlight: "signals too",
 		subtextPink:
-			"The moments that matter don’t only live in your systems. They happen on calls, in meetings and in demos. grync.io turns those conversations into signals the engine can act on.",
+			"The moments that matter don’t only live in your systems. They surface in calls and meetings, and in the emails, PDFs and tickets moving through your business. grync.io reads them, understands what needs attention, and turns it into a signal the engine can act on.",
 		subtextGray:
-			"Listens to calls, demos, meetings · Pulls out what matters · Feeds the same engine · A spoken signal acts like a system one",
+			"Reads calls, emails, PDFs, tickets · Extracts what needs attention · Feeds the same engine · An unstructured signal acts like a system one",
 		diagramImage: "/images/platform/p5.png",
-		closingBold: "What gets said on the call now acts like every other ",
-		closingRed: "signal, caught, understood, and acted on.",
+		cues: {
+			rows: [
+				{
+					moment: "A readiness cue",
+					action:
+						"Interest, intent or urgency — expressed on a call or written in an email or quote request.",
+				},
+				{
+					moment: "A risk cue",
+					action:
+						"Frustration, a churn hint or a complaint raised on a call or in a ticket.",
+				},
+				{
+					moment: "A request",
+					action:
+						"A feature ask, order or commitment that should become a task or a follow-up.",
+				},
+				{
+					moment: "A hand-off",
+					action:
+						"The right owner notified with the moment attached — not the whole recording or document.",
+				},
+			],
+		},
+		closingBold: "Whatever the format - a call, an email, a PDF - what matters gets read, understood, and ",
+		closingRed: "acted on like every other signal.",
 	},
 
 	"ai-engine": {
@@ -204,7 +228,7 @@ export const panelContent = {
 				},
 				{
 					title: "Write back & close",
-					text: "The outcome is written back into your systems, and the task is closed. Your records stay current, with nothing left open.",
+					text: "The outcome is written back into your systems, and the task is closed, and the outcome is tracked and verified. Your records stay current, with nothing left open.",
 					accent: "#e4e6eb",
 					icon: "/images/platform/c5.png",
 				},
@@ -341,9 +365,22 @@ const Panel = ({ activeId }) => {
 				<>
 					<img
 						src={data.diagramImage}
-						alt="A conversation turns into a readiness cue, a risk cue, a request or a hand-off"
+						alt="A conversation or document turns into a readiness cue, a risk cue, a request or a hand-off"
 						className={styles.diagramImage}
 					/>
+
+					<div className={styles.tableCard}>
+						<div className={styles.tableHeaderRow}>
+							<span className="tablehead1">Cue</span>
+							<span>What it means</span>
+						</div>
+						{data.cues.rows.map((row, i) => (
+							<div key={i} className={styles.tableRow}>
+								<span className={styles.tableMoment}>{row.moment}</span>
+								<span className={styles.tableAction}>{row.action}</span>
+							</div>
+						))}
+					</div>
 
 					<div className={styles.diagramCallout}>
 						<p>

@@ -36,6 +36,7 @@ export const panelContent = {
 					"Wait for someone to open them",
 					"Report the problem",
 					"Hand your team another task",
+					"Stop at the task",
 				],
 			},
 			right: {
@@ -46,6 +47,7 @@ export const panelContent = {
 					"Acts without being opened",
 					"Runs the response. Notify, assign, approve, write back",
 					"Does the task itself, inside your rules",
+					"Stays with the issue through to resolution",
 				],
 			},
 		},
@@ -60,7 +62,7 @@ export const panelContent = {
 			},
 			{
 				title: "Acts",
-				text: "Doesn’t hand your team a task to remember; it does the task. Notifies, assigns, routes for approval, launches workflows, triggers campaigns and writes back, all inside the rules you define.",
+				text: "Doesn’t hand your team a task to remember; it does the task. Identifies, decides, assigns, escalates and resolves. Notifying owners, routing for approval and writing back, all inside the rules you define.",
 			},
 		],
 		closingBold: "One layer that doesn’t just see what nothing else could",

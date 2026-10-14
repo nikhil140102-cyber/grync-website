@@ -77,30 +77,6 @@ export const panelContent = {
 		subtextGray:
 			"Reads calls, emails, PDFs, tickets · Extracts what needs attention · Feeds the same engine · An unstructured signal acts like a system one",
 		diagramImage: "/images/platform/p5.png",
-		cues: {
-			rows: [
-				{
-					moment: "A readiness cue",
-					action:
-						"Interest, intent or urgency — expressed on a call or written in an email or quote request.",
-				},
-				{
-					moment: "A risk cue",
-					action:
-						"Frustration, a churn hint or a complaint raised on a call or in a ticket.",
-				},
-				{
-					moment: "A request",
-					action:
-						"A feature ask, order or commitment that should become a task or a follow-up.",
-				},
-				{
-					moment: "A hand-off",
-					action:
-						"The right owner notified with the moment attached — not the whole recording or document.",
-				},
-			],
-		},
 		closingBold: "Whatever the format - a call, an email, a PDF - what matters gets read, understood, and ",
 		closingRed: "acted on like every other signal.",
 	},
@@ -368,19 +344,6 @@ const Panel = ({ activeId }) => {
 						alt="A conversation or document turns into a readiness cue, a risk cue, a request or a hand-off"
 						className={styles.diagramImage}
 					/>
-
-					<div className={styles.tableCard}>
-						<div className={styles.tableHeaderRow}>
-							<span className="tablehead1">Cue</span>
-							<span>What it means</span>
-						</div>
-						{data.cues.rows.map((row, i) => (
-							<div key={i} className={styles.tableRow}>
-								<span className={styles.tableMoment}>{row.moment}</span>
-								<span className={styles.tableAction}>{row.action}</span>
-							</div>
-						))}
-					</div>
 
 					<div className={styles.diagramCallout}>
 						<p>

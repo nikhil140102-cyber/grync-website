@@ -32,7 +32,7 @@ export const posts = [
 		featured: true,
 
 		author: {
-			name: "Grync Editorial",
+			name: "grync.io Editorial",
 			avatar: "/images/insights/authors/grync-editorial.png",
 			// the reference shows a full date ("Aug 21, 2026") here,
 			// distinct from the "Aug 2026" used on the listing cards
@@ -90,7 +90,7 @@ export const posts = [
 					},
 					{
 						type: "paragraph",
-						text: "This is where platforms like grync.io make a difference. Modern PLG teams use tools like Grync's Notification Agent and Insight Agent to stay connected with product signals in real time:",
+						text: "This is where platforms like grync.io make a difference. Modern PLG teams use tools like grync.io's Notification Agent and Insight Agent to stay connected with product signals in real time:",
 					},
 					{
 						type: "list",
@@ -190,7 +190,7 @@ export const posts = [
 		featured: false,
 
 author: {
-	name: "Grync Editorial",
+	name: "grync.io Editorial",
 	avatar: "/images/insights/authors/grync-editorial.png",
 	publishedDate: "Jul 12, 2026",
 },
@@ -636,7 +636,7 @@ sections: [
 		featured: false,
 
 author: {
-	name: "Grync Editorial",
+	name: "grync.io Editorial",
 	avatar: "/images/insights/authors/grync-editorial.png",
 	publishedDate: "Jul 5, 2026",
 },
@@ -1087,13 +1087,13 @@ sections: [
 		image: "/images/insights/saas-growth-platform.png",
 		featured: false,
 		author: {
-			name: "Grync Editorial",
+			name: "grync.io Editorial",
 			avatar: "/images/insights/authors/grync-editorial.png",
 			publishedDate: "Jun 20, 2026",
 		},
 
 author: {
-	name: "Grync Editorial",
+	name: "grync.io Editorial",
 	avatar: "/images/insights/authors/grync-editorial.png",
 	publishedDate: "Jun 20, 2026",
 },
@@ -1468,13 +1468,13 @@ sections: [
 		image: "/images/insights/product-analytics-2026.png",
 		featured: false,
 		author: {
-			name: "Grync Editorial",
+			name: "grync.io Editorial",
 			avatar: "/images/insights/authors/grync-editorial.png",
 			publishedDate: "Jun 8, 2026",
 		},
 
 author: {
-	name: "Grync Editorial",
+	name: "grync.io Editorial",
 	avatar: "/images/insights/authors/grync-editorial.png",
 	publishedDate: "Jun 8, 2026",
 },
@@ -1891,13 +1891,13 @@ sections: [
 		image: "/images/insights/ai-marketing-automation.png",
 		featured: false,
 		author: {
-			name: "Grync Editorial",
+			name: "grync.io Editorial",
 			avatar: "/images/insights/authors/grync-editorial.png",
 			publishedDate: "May 22, 2026",
 		},
 
 author: {
-	name: "Grync Editorial",
+	name: "grync.io Editorial",
 	avatar: "/images/insights/authors/grync-editorial.png",
 	publishedDate: "May 22, 2026",
 },
@@ -2298,13 +2298,13 @@ sections: [
 		image: "/images/insights/automate-user-journeys.png",
 		featured: false,
 		author: {
-			name: "Grync Editorial",
+			name: "grync.io Editorial",
 			avatar: "/images/insights/authors/grync-editorial.png",
 			publishedDate: "May 10, 2026",
 		},
 
 author: {
-	name: "Grync Editorial",
+	name: "grync.io Editorial",
 	avatar: "/images/insights/authors/grync-editorial.png",
 	publishedDate: "May 10, 2026",
 },
@@ -2585,13 +2585,13 @@ sections: [
 		image: "/images/insights/digital-adoption-platforms.png",
 		featured: false,
 		author: {
-			name: "Grync Editorial",
+			name: "grync.io Editorial",
 			avatar: "/images/insights/authors/grync-editorial.png",
 			publishedDate: "Apr 18, 2026",
 		},
 
 author: {
-	name: "Grync Editorial",
+	name: "grync.io Editorial",
 	avatar: "/images/insights/authors/grync-editorial.png",
 	publishedDate: "Apr 18, 2026",
 },
@@ -2774,22 +2774,8 @@ sections: [
 				type: "quote",
 				text: "But if your goal is real growth, conversions, and revenue impact, grync.io is the best choice.",
 			},
-			{
-				type: "paragraph",
-				text: "Struggling with low adoption and missed revenue opportunities?",
-			},
-			{
-				type: "paragraph",
-				text: "See how grync.io.io helps you convert user actions into measurable growth.",
-			},
-			{
-				type: "paragraph",
-				text: "<a href=\"/contact-us\"  rel=\"noopener noreferrer\">Get started now.</a>",
-			},
 		],
 	},
-
-
 {
 		id: "faq",
 		heading: "FAQs",

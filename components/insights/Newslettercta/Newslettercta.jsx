@@ -147,7 +147,7 @@ const NewsletterCta = () => {
 							>
 								{isSubmitting
 									? "Subscribing\u2026"
-									: "Subscribe to Grync Insights"}
+									: "Subscribe to grync.io Insights"}
 							</button>
 						</form>
 					)}
